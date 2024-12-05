@@ -60,7 +60,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  height: 3.5rem;
+  height: 4.5rem;
   width: auto;
   place-items: center;
   position: fixed;
@@ -122,6 +122,11 @@ nav > ul > li > a:hover::after {
 main {
   .sub-title {
     margin-top: 50px;
+    color: var(--primary-color);
+
+    font-size: 60px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   }
   margin-top: 3rem;
   #home-container {
@@ -275,12 +280,7 @@ main {
   .about-col-2 {
     flex-basis: 60%;
   }
-  .sub-title {
-    color: var(--extra-light);
-    font-size: 60px;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  }
+
   .tab-titles {
     display: flex;
     margin: 20px 0 40px;
@@ -291,7 +291,7 @@ main {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: var(--extra-light);
+    color: var(--secondary-color);
     transition: color 0.3s ease-in-out;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     &:hover {
