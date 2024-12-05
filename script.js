@@ -12,6 +12,27 @@ function openTab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
+document.getElementById("loadMore").addEventListener("click", function () {
+  const myWorkContents = document.querySelector(".work-list");
+
+  const newWorkContent = document.createElement("div");
+  newWorkContent.innerHTML = `"Write down your more works cards here.... <div class="work">
+            <img src="./asset/img/redFlowerDesk.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                A social media app that allows users to share their thoughts,
+                feelings, and experiences. It also includes features like
+                commenting, liking, and following other users.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>"`;
+  myWorkContents.appendChild(newWorkContent);
+});
+
 const currentYear = new Date().getFullYear();
 document.getElementById(
   "copyright"
@@ -19,6 +40,7 @@ document.getElementById(
 
 // Add event listeners to tab links, the sidebar when <=600px
 var sidemeu = document.getElementById("sidemenu");
+
 function openmenu() {
   sidemeu.style.right = "0";
 }
@@ -26,6 +48,15 @@ function openmenu() {
 function closemenu() {
   sidemeu.style.right = "-200px";
 }
+
+const mediaQuery = window.matchMedia("(max-width: 600px)");
+function handleMediaChange(e) {
+  if (e.matches) {
+    openmenu(); // 当屏幕小于600px时调用openmenu()
+  }
+}
+handleMediaChange(mediaQuery);
+mediaQuery.addEventListener("change", handleMediaChange);
 
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzn4LyuuG-QmODdjrbZQTIBfzWxLOWc1ID9Doaz_toCDmRy2iPNdYAbUdWBmjTzJI_ysw/exec";
