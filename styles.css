@@ -120,20 +120,25 @@ nav > ul > li > a:hover::after {
 }
 
 main {
-  margin-top: 5rem;
+  .sub-title {
+    margin-top: 50px;
+  }
+  margin-top: 3rem;
   #home-container {
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    gap: 4rem;
+    gap: 8rem;
     padding: 2rem;
     width: auto;
     /* background-image: url(./asset/img/Stockholm1.jpeg); */
     img {
       margin-top: 3rem;
-      /* height: 300px; */
+      height: 500px;
       width: 100%;
       object-fit: cover;
+      border-radius: 50%;
     }
   }
   .buttonGroup {
@@ -231,7 +236,7 @@ main {
     place-items: end;
   }
   #wordsSection {
-    padding-top: 20px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto) 3fr 2fr 4fr;
