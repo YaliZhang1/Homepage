@@ -49,14 +49,14 @@ function closemenu() {
   sidemeu.style.right = "-200px";
 }
 
-const mediaQuery = window.matchMedia("(max-width: 600px)");
-function handleMediaChange(e) {
-  if (e.matches) {
-    openmenu(); // 当屏幕小于600px时调用openmenu()
-  }
-}
-handleMediaChange(mediaQuery);
-mediaQuery.addEventListener("change", handleMediaChange);
+// const mediaQuery = window.matchMedia("(max-width: 800px)");
+// function handleMediaChange(e) {
+//   if (e.matches) {
+//     openmenu(); // 当屏幕小于800px时调用openmenu()
+//   }
+// }
+// handleMediaChange(mediaQuery);
+// mediaQuery.addEventListener("change", handleMediaChange);
 
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzn4LyuuG-QmODdjrbZQTIBfzWxLOWc1ID9Doaz_toCDmRy2iPNdYAbUdWBmjTzJI_ysw/exec";
