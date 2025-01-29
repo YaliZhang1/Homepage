@@ -29,7 +29,7 @@ document.getElementById("loadMore").addEventListener("click", function () {
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
-          </div>"`;
+          </div>`;
   myWorkContents.appendChild(newWorkContent);
 });
 
