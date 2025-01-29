@@ -16,7 +16,7 @@ document.getElementById("loadMore").addEventListener("click", function () {
   const myWorkContents = document.querySelector(".work-list");
 
   const newWorkContent = document.createElement("div");
-  newWorkContent.innerHTML = `"Write down your more works cards here.... <div class="work">
+  newWorkContent.innerHTML = ` <div class="work">
             <img src="./asset/img/redFlowerDesk.jpg" />
             <div class="layer">
               <h3>Social Media App</h3>
