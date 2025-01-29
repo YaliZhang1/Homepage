@@ -12,7 +12,8 @@ function openTab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-document.getElementById("loadMore").addEventListener("click", function () {
+document.getElementById("loadMore").addEventListener("click", function (e) {
+  e.preventDefault();
   const myWorkContents = document.querySelector(".work-list");
 
   const newWorkContent = document.createElement("div");
