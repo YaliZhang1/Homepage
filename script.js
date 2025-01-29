@@ -24,8 +24,7 @@ document.getElementById("loadMore").addEventListener("click", function (e) {
               <h3>Social Media App</h3>
               <p>
                 A social media app that allows users to share their thoughts,
-                feelings, and experiences. It also includes features like
-                commenting, liking, and following other users.
+                feelings, and experiences.
               </p>
               <a href="#"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -38,9 +37,7 @@ document.getElementById("loadMore").addEventListener("click", function (e) {
               <h3>Online Shopping website</h3>
               <p>
                 A online shopping website that allows users to browse and
-                purchase products from a wide variety of categories. It also
-                includes features like adding products to cart, checking out,
-                and receiving notifications when an order is placed.
+                purchase products from a wide variety of categories. .
               </p>
               <a href="#"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
