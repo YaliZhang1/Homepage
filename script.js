@@ -16,7 +16,8 @@ document.getElementById("loadMore").addEventListener("click", function () {
   const myWorkContents = document.querySelector(".work-list");
 
   const newWorkContent = document.createElement("div");
-  newWorkContent.innerHTML = ` <div class="work">
+  newWorkContent.innerHTML = ` <div class="work-list">
+          <div class="work">
             <img src="./asset/img/redFlowerDesk.jpg" />
             <div class="layer">
               <h3>Social Media App</h3>
@@ -29,7 +30,36 @@ document.getElementById("loadMore").addEventListener("click", function () {
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
-          </div>`;
+          </div>
+          <div class="work">
+            <img src="./asset/img/deskLaptop.jpg" />
+            <div class="layer">
+              <h3>Online Shopping website</h3>
+              <p>
+                A online shopping website that allows users to browse and
+                purchase products from a wide variety of categories. It also
+                includes features like adding products to cart, checking out,
+                and receiving notifications when an order is placed.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./asset/img/PCB.jpg" />
+            <div class="layer">
+              <h3>A Restaurant Website</h3>
+              <p>
+                A restaurant website that allows users to browse and order food
+                from...
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>`;
   myWorkContents.appendChild(newWorkContent);
 });
 
