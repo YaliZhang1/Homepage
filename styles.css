@@ -1,24 +1,4 @@
-/* 这里没有使用下载的字体 */
-/* @font-face {
-  font-family: "Roboto-Regular";
-  src: url("fonts/MyCustomFont.woff2") format("woff2"),
-    url("fonts/MyCustomFont.woff") format("woff"),
-    url("./asset/fonts/Roboto-Regular.ttf") format("ttf");
-}
-@font-face {
-  font-family: "PlayfairDisplay-Regular";
-  src: url("./asset/fonts/PlayfairDisplay-Regular.ttf") format("ttf");
-} */
 
-/* // <uniquifier>: Use a unique and descriptive class name */
-/* // <weight>: Use a value from 400 to 900 */
-
-/* .playfair-display-<uniquifier > {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
 :root {
   --primary-color: #9f54e5;
   --light-primary-color: #e9c1f1;
