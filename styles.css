@@ -1,4 +1,3 @@
-
 :root {
   --primary-color: #9f54e5;
   --light-primary-color: #e9c1f1;
@@ -359,10 +358,21 @@ main {
   }
   .work-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
-   
+    grid-template-columns: repeat(3, 1fr); /* 默认：电脑端3列 */
     gap: 40px;
     margin-top: 50px;
+  }
+
+  @media (max-width: 1024px) {
+    .work-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .work-list {
+      grid-template-columns: 1fr;
+    }
   }
   .work {
     border-radius: 10px;
@@ -375,6 +385,11 @@ main {
     display: block;
     object-fit: cover;
     transition: transform 0.3s;
+  }
+  @media (min-width: 1024px) {
+    .work img {
+      height: 350px;
+    }
   }
   .layer {
     width: 100%;
