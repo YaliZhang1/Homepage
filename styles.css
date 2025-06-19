@@ -580,6 +580,12 @@ main {
   z-index: 2;
   transition: right 0.5s;
 }
+@media screen and (max-width: 1024px) {
+  #header > nav > ul {
+    padding-top: 0;
+  }
+}
+
 #header > nav > ul > li {
   display: block;
   margin: 25px;
