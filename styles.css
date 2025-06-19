@@ -160,7 +160,7 @@ main {
 
   h1 {
     color: var(--primary-color);
-    font-family: PlayfairDisplay-Regular;
+    font-family: var(--secondary-font-family);
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -172,7 +172,7 @@ main {
   }
   p {
     color: var(--text-dark);
-    font-family: Roboto-Regular;
+    font-family: var(--main-font-family);
     font-size: 1.125rem;
     margin-bottom: 1rem;
   }
@@ -278,9 +278,7 @@ main {
   .tab-links.active-link::after {
     width: 50%;
   }
-  .tab-contents ul {
-    padding-left: -2rem;
-  }
+  
   .tab-contents ul li {
     list-style: none;
     margin-bottom: 10px;
@@ -358,7 +356,7 @@ main {
   }
   .work-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 默认：电脑端3列 */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 40px;
     margin-top: 50px;
   }
@@ -644,7 +642,7 @@ main {
   font-size: 14px;
 }
 
-@media (min-width: 800px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   main .main-container .buttonGroup {
     display: flex;
     justify-content: space-around;
@@ -659,6 +657,9 @@ main {
     display: flex !important;
     gap: 30px;
     flex-direction: column;
+  }
+   .layer > p {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1400px) {
@@ -692,7 +693,9 @@ main {
     gap: 30px;
     flex-direction: column;
   }
-  
+  .layer > p {
+    font-size: 0.8rem;
+  }
 }
 @media only screen and (min-width: 1400px) {
   #header > nav > i {
@@ -717,5 +720,8 @@ main {
         color: var(--primary-color);
       }
     }
+  }
+   #portfolio > .container > .work-list > .layer > p {
+    font-size: 0.9rem;
   }
 }
