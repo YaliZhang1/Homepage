@@ -84,6 +84,9 @@ nav > ul > li > a:hover::after {
 }
 
 main {
+  .hidden-work {
+    display: none;
+  }
   .sub-title {
     margin-top: 50px;
     color: var(--primary-color);
@@ -278,7 +281,7 @@ main {
   .tab-links.active-link::after {
     width: 50%;
   }
-  
+
   .tab-contents ul li {
     list-style: none;
     margin-bottom: 10px;
@@ -356,7 +359,7 @@ main {
   }
   .work-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 50px;
   }
@@ -658,7 +661,7 @@ main {
     gap: 30px;
     flex-direction: column;
   }
-   .layer > p {
+  .layer > p {
     font-size: 0.8rem;
   }
 }
@@ -721,7 +724,7 @@ main {
       }
     }
   }
-   #portfolio > .container > .work-list > .layer > p {
+  #portfolio > .container > .work-list > .layer > p {
     font-size: 0.9rem;
   }
 }

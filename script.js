@@ -11,28 +11,24 @@ function openTab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
-
-document.getElementById("loadMore").addEventListener("click", function (e) {
-  e.preventDefault();
-  const myWorkContents = document.querySelector(".work-list");
-
-  const newWorkContent = document.createElement("div");
-  newWorkContent.innerHTML = ` 
-          <div class="work">
-            <img src="./asset/img/redFlowerDesk.jpg" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                A social media app that allows users to share their thoughts,
-                feelings, and experiences.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          
-        `;
-  myWorkContents.appendChild(newWorkContent);
+// see more button function
+const loadMoreBtn = document.getElementById("loadMore");
+const hiddenWorks = document.querySelectorAll(".hidden-work");
+let expanded = false;
+loadMoreBtn.addEventListener("click", () => {
+  if (!expanded) {
+    hiddenWorks.forEach((work) => {
+      work.style.display = "block";
+    });
+    loadMoreBtn.textContent = "See less";
+    expanded = true;
+  } else {
+    hiddenWorks.forEach((work) => {
+      work.style.display = "none";
+    });
+    loadMoreBtn.textContent = "See more";
+    expanded = false;
+  }
 });
 
 const currentYear = new Date().getFullYear();
