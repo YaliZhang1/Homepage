@@ -14,21 +14,21 @@ function openTab(tabname) {
 // see more button function
 const loadMoreBtn = document.getElementById("loadMore");
 const hiddenWorks = document.querySelectorAll(".hidden-work");
+
 let expanded = false;
+
 loadMoreBtn.addEventListener("click", () => {
-  if (!expanded) {
-    hiddenWorks.forEach((work) => {
-      work.style.display = "block";
-    });
-    loadMoreBtn.textContent = "See less";
-    expanded = true;
-  } else {
-    hiddenWorks.forEach((work) => {
-      work.style.display = "none";
-    });
-    loadMoreBtn.textContent = "See more";
-    expanded = false;
-  }
+  expanded = !expanded;
+
+  hiddenWorks.forEach((work) => {
+    if (expanded) {
+      work.classList.remove("hidden-work");
+    } else {
+      work.classList.add("hidden-work");
+    }
+  });
+
+  loadMoreBtn.textContent = expanded ? "See less" : "See more";
 });
 
 const currentYear = new Date().getFullYear();
