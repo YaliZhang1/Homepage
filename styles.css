@@ -439,6 +439,10 @@ main {
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    &:hover {
+      color: var(--extra-light);
+      background: var(--primary-color);
+    }
   }
   .work:hover img {
     transform: scale(1.1);
