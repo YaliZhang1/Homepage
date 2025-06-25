@@ -550,31 +550,6 @@ main {
   display: block;
 }
 
-/* -----------------------------------css for small screens------------------ */
-
-@media only screen and (max-width: 800px) {
-  #home-container {
-    display: flex !important;
-    flex-direction: column;
-    #wordsSection {
-      /* padding-top: 50px; */
-      display: flex;
-      gap: 30px;
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-  #profileSection-pic {
-    display: none;
-  }
-
-  main #home-container .buttonGroup {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
 .resumeBtn,
 .hireBtn {
   display: flex;
@@ -596,12 +571,6 @@ main {
   z-index: 2;
   transition: right 0.5s;
 }
-@media screen and (max-width: 1024px) {
-  #header > nav > ul {
-    padding-top: 0;
-  }
-}
-
 #header > nav > ul > li {
   display: block;
   margin: 25px;
@@ -660,7 +629,39 @@ main {
   font-size: 14px;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+/* -----------------------------------css for small screens------------------ */
+
+@media only screen and (max-width: 800px) {
+  #home-container {
+    display: flex !important;
+    flex-direction: column;
+    #wordsSection {
+      /* padding-top: 50px; */
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  #profileSection-pic {
+    display: none;
+  }
+
+  main #home-container .buttonGroup {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #header > nav > ul {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1026px) {
   main .main-container .buttonGroup {
     display: flex;
     justify-content: space-around;
@@ -680,7 +681,13 @@ main {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1400px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
+  #header {
+   display: flex;
+  }
+  #header > #personName {
+    margin-left: 5.5vw;
+  }
   #header > nav > i {
     opacity: 0;
   }
@@ -691,7 +698,6 @@ main {
     margin-top: -200px;
     display: inline-flex;
     padding-right: 20rem !important;
-
     height: 20px;
     gap: 10px;
     width: auto !important;
