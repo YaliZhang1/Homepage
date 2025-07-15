@@ -466,6 +466,10 @@ main {
     color: var(--extra-light);
   }
   /* --------------------------------contact------------------------ */
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+  }
   .contact-left {
     flex-basis: 35%;
   }
@@ -656,6 +660,15 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+  }
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
   }
 }
 
