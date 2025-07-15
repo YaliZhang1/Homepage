@@ -590,6 +590,9 @@ main {
     color: var(--primary-color);
   }
 }
+.open-menu {
+  font-size: 1.8rem;
+}
 .close-button {
   position: absolute;
   top: 25px;
@@ -597,6 +600,7 @@ main {
   color: var(--extra-light);
   opacity: 1;
   display: block;
+  font-size: 2rem;
   &:hover {
     opacity: 0.7;
     cursor: pointer;
@@ -683,7 +687,7 @@ main {
 }
 @media (min-width: 1025px) and (max-width: 1400px) {
   #header {
-   display: flex;
+    display: flex;
   }
   #header > #personName {
     margin-left: 5.5vw;
